@@ -1,9 +1,5 @@
 
-main{
-    height: 100%;
-    background: url('image/main.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
-} /* Basic CSS */
+/* Basic CSS */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -12,7 +8,7 @@ body {
 }
 header {
     height: 100vh;
-    background: url('image/Divin_Rapper.jpg') no-repeat center center/cover;
+    background: url('Divin_Rapper.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -28,6 +24,11 @@ header h1 {
 header p {
     font-size: 1.5rem;
     margin: 10px 0 20px;
+}
+main{
+    height: 100%;
+    background: url('main.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
 }
 .btn {
     padding: 10px 20px;
