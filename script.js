@@ -14,3 +14,18 @@ function toggleBurgerMenu() {
     burger.classList.toggle('open');
     navLinks.classList.toggle('open');
 }
+
+const audioPlayer = document.getElementById('audio-player');
+        document.querySelectorAll('.bar').forEach(bar => {
+            bar.addEventListener('click', () => {
+                const song = bar.getAttribute('data-song');
+                if (audioPlayer.src !== song) {
+                    audioPlayer.src = song;
+                    audioPlayer.play();
+                } else if (!audioPlayer.paused) {
+                    audioPlayer.pause();
+                } else {
+                    audioPlayer.play();
+                }
+            });
+        });
